@@ -89,7 +89,7 @@ namespace cat_fish
         static void getInput()
         {
             ConsoleKeyInfo input;
-            while (!Console.KeyAvailable)
+            if (!Console.KeyAvailable)
             {
                 return;
             }
